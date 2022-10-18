@@ -1,0 +1,54 @@
+.backG  {
+    background-color: #0c164f;
+    transition: all;
+    /*background-color: black;*/
+}
+.backG2 {
+    transition: all;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.tglC {
+    color: white;
+}
+.tglC2 {
+    color: black;
+}
+
+.tglC span {
+    background-color: white;
+}
+
+.tglC2 span {
+    background-color: black;
+}
+
+.toggle {
+    display: none;
+    flex-direction: column;
+}
+.toggle span {
+    display: block;
+    width: 1.625rem;
+    height: 0.125rem;
+}
+.toggle span:not(:last-child) {
+    margin-bottom: 0.3125rem;
+}
+
+.shadower {
+    border-bottom: 1px solid black;
+}
+
+/* Toggle B */
+input:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: blue;
+  }
+
+@media (max-width:767px) {
+    .toggle {
+    display: block;
+    }
+}

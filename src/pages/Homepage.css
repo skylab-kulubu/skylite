@@ -1,0 +1,27 @@
+.backG {
+    background-image:linear-gradient(to right,#0c164f ,#1d1135 );
+    /*background-color: black;*/
+}
+
+
+.imgWrapper {}
+
+.imaj {
+    transition: all;
+    animation:upDo linear 24s infinite;
+}
+
+@keyframes upDo {
+    0% {
+        transform: translate(-6px,-16px);
+        transform:rotate(-360deg);
+    }
+    50%{
+        transform: translate(0px,0px);
+        transform:rotate(-180deg);
+    }
+    100%{
+        transform: translate(-6px,-16px);
+        transform:rotate(0deg);
+    }
+}
